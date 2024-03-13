@@ -20,12 +20,13 @@ html {
 body {
     font-size: 16px;
     font-family: "poppins", sans-serif;
-    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100% );
+    background: rgb(73,67,179);
+    background: linear-gradient(90deg, rgba(73,67,179,0.3841911764705882) 0%, rgba(2,212,255,0.14049369747899154) 100%);
 }
 
 /* Títulos y Subtítulos */
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -39,7 +40,6 @@ h3 {
 
 .titulo {
     text-align: center;
-
 }
 
 /* Navegador */
@@ -53,8 +53,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
     background-color: var(--secundario);
+    font-size: 2rem;
 }
 
 @media (min-width: 480px) {
@@ -81,8 +81,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .campus {
@@ -96,12 +95,12 @@ h3 {
 
 .campus p {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 450;
 }
 
 .campus span {
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     font-weight: 650;
 }
 
@@ -116,37 +115,98 @@ h3 {
 
 /* Nostros */
 .nosotros {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 5rem;
+    margin: 1rem 0;
 }
 
 /* Carreras */
 @media (min-width: 480px) {
     .carreras-inglic {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        place-items: center;
+        text-align: center;
+        column-gap: 10rem;
     }
 }
 
-.carreras h2 {
+.carreras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-@media (min-width: 480px) {
-    .ingenieria {
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .licenciatura {
-    
-}
-
+.carreras h3 {
+    font-size: 4rem;
+    font-weight: 250;
 }
 
 .carreras .iconos {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Comunidad */
+.comunidad-personas {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    padding: 0 5rem
+}
+
+@media (min-width: 480px) {
+    .comunidad-personas {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2.5rem;
+    }
+}
+
+.comunidad-personas svg {
+    width: 8rem;
+    height: 8rem;
+}
+/* Contacto */
+.contacto-bg {
+    background-color: var(--blanco);
+    padding-top: 4px;
+}
+
+.contacto-rs {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contacto-rs {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5rem;
+        justify-content: center;
+    }
+}
+
+.contacto-rs svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.red-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1.5rem;
 }
