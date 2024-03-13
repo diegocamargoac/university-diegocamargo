@@ -1,0 +1,152 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #F72C00;
+    --secundario: #00C1FF;
+    --gris: #757575;
+    --grisclaro: #DFE9F3;
+    
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100% );
+}
+
+/* Títulos y Subtítulos */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.titulo {
+    text-align: center;
+
+}
+
+/* Navegador */
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegador {
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    background-color: var(--secundario);
+}
+
+@media (min-width: 480px) {
+    .navegador {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.navegador a:hover {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+}
+
+.navegador a {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* Campus */
+.campus-bg {
+    background-image: url(../img/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.campus {
+    background-color: rgb(0 0 0 / 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.3rem;
+}
+
+.campus p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 450;
+}
+
+.campus span {
+    font-size: 2.3rem;
+    font-weight: 650;
+}
+
+.campus .svg-color {
+    fill: var(--grisclaro);
+}
+
+.campus svg {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Nostros */
+.nosotros {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Carreras */
+@media (min-width: 480px) {
+    .carreras-inglic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.carreras h2 {
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .ingenieria {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .licenciatura {
+    
+}
+
+}
+
+.carreras .iconos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
